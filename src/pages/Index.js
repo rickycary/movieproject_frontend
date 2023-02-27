@@ -1,5 +1,12 @@
+import { useLoaderData } from "react-router-dom";
+import Post from "../components/Post"
+
 const Index = (props) => {
-    return <h1>Index</h1>;
+
+  const movies = useLoaderData()
+
+    return movies.map((post) => <Post key={post.id} post={post}/>
+    )
   };
   
   export default Index;
