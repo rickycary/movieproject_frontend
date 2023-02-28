@@ -27,9 +27,8 @@ Movie Reviewer will allow users to review movies that they have watched. The app
 - Outlet -- "/movie/delete/:id" --> deleteAction
 
 ### Website Images
-![Entrance Page](https://i.imgur.com/1ifSV9T.png)
-![Index Page](https://i.imgur.com/pdvj50A.png)
-![ShowPage](https://i.imgur.com/MjOfUEC.png)
+![Index Page](https://i.imgur.com/P6uaoDW.png)
+![ShowPage](https://i.imgur.com/jGVKb3S.png)
 
 ### Backend Wireframe
 ![Wireframe](https://i.imgur.com/VwSujSj.png)
