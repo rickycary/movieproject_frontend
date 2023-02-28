@@ -25,3 +25,28 @@ export async function CreateAction({request}){
     // redirect back to the index page
     return redirect("/")
 }
+
+export async function UpdateAction({ request, params }){
+    // get the form data
+    const formData = await request.formData()
+
+    // construct new movie
+    const newMovie = {
+        movieName: formData.get("movieName"),
+        genre: formData.get("genre"),
+        rating: formData.get("rating"),
+        poster: formData.get("poster")
+    };
+
+    // request to update route in the backend
+    await fetch(url + params.id + "/", {
+        method: "put",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newMovie)
+    })
+
+    // redirect back to the index page
+    return redirect("/")
+}
