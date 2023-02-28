@@ -26,6 +26,7 @@ export async function CreateAction({request}){
     return redirect("/")
 }
 
+// Update function
 export async function UpdateAction({ request, params }){
     // get the form data
     const formData = await request.formData()
@@ -50,3 +51,5 @@ export async function UpdateAction({ request, params }){
     // redirect back to the index page
     return redirect("/")
 }
+
+// Delete Function

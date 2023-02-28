@@ -11,9 +11,8 @@ const Index = (props) => {
       <Form action="/create" method="post">
         <input type="text" name="movieName" placeholder="Movie Name" />
         <input type="text" name="genre" placeholder="Genre" />
-        <input type="text" name="rating" placeholder="Rating" />
         <input type="text" name="poster" placeholder="Poster" />
-        <button>Add a Movie</button>
+        <button>Add to Watchlist</button>
       </Form>
     </div>
     {movies.map((post) => <Post key={post.id} post={post}/>)}
