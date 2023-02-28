@@ -27,9 +27,10 @@ const Show = (props) => {
         <input type="text" name="poster" placeholder="Poster" defaultValue="Poster"/> <br />
         <button>Edit Movie</button>
       </Form>
+      <Form action={`/delete/${post.id}`} method="post">
+        <button>Delete Movie</button>
+      </Form>
       </div>
-
-
       <Link to="/">
         <button>Go Back</button>
       </Link>

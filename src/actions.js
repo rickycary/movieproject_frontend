@@ -53,3 +53,11 @@ export async function UpdateAction({ request, params }){
 }
 
 // Delete Function
+export async function DeleteAction ({ params }) {
+    const id = params.id
+    await fetch(url + id + "/", {
+        method: "delete"
+    })
+    // redirect to main page
+    return redirect("/")
+}
