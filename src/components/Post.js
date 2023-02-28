@@ -15,7 +15,6 @@ const Post = (props) => {
     return <div style={div}>
       <Link to={`/post/${post.id}`}>
         <h1>{post.movieName}</h1>
-        <h2>{post.genre}</h2>
       </Link>
 
     </div>

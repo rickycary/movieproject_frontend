@@ -11,7 +11,8 @@ const Index = (props) => {
       <Form action="/create" method="post">
         <input type="text" name="movieName" placeholder="Movie Name" />
         <input type="text" name="genre" placeholder="Genre" />
-        <input type="text" name="poster" placeholder="Poster" />
+        <input type="text" name="rating" placeholder="Release Date" />
+        <input type="text" name="poster" placeholder="Release Date" /> <br />
         <button>Add to Watchlist</button>
       </Form>
     </div>

@@ -14,18 +14,21 @@ const Show = (props) => {
 
 
     return <div style={div}>
-      <h1>{post.poster}</h1>
       <h1>{post.movieName}</h1>
-      <h2>{post.genre}</h2>
-      <h2>{post.rating}</h2>
+      <h2>{post.poster}</h2>
+      <h3>{post.genre}</h3>
+      <h3>{post.rating}</h3>
 
       <div>
         <h2>Update Movie</h2>
         <Form action={`/update/${post.id}`} method="post">
         <input type="text" name="movieName" placeholder="Movie Name" defaultValue={post.movieName} /> <br />
+        <input type="text" name="poster" placeholder="Where to watch" defaultValue={post.poster}/> <br />
         <input type="text" name="genre" placeholder="Genre" defaultValue={post.genre} /> <br />
-        <input type="text" name="poster" placeholder="Poster" defaultValue="Poster"/> <br />
-        <button>Edit Movie</button>
+        <input type="text" name="rating" placeholder="Release Date" defaultValue={post.rating}/> <br />
+  
+
+        <button>Update Movie</button>
       </Form>
       <Form action={`/delete/${post.id}`} method="post">
         <button>Delete Movie</button>
