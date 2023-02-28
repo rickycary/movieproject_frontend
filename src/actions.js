@@ -17,7 +17,11 @@ export async function CreateAction({request}){
     await fetch(url, {
         method: "post",
         headers: {
-            "Content-Type": ""
-        }
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newMovie)
     })
+
+    // redirect back to the index page
+    return redirect("/")
 }
