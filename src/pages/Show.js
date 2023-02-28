@@ -6,18 +6,18 @@ const Show = (props) => {
   // Styles
   const div = {
     textAlign: "center",
-    border: "3px solid red",
-    width: "80%",
+    border: "3px solid black",
+    width: "50%",
     margin: "30px auto",
+    backgroundColor: "#cfe0e8"
   }
-
-
 
     return <div style={div}>
       <h1>{post.movieName}</h1>
       <h2>{post.poster}</h2>
       <h3>{post.genre}</h3>
       <h3>{post.rating}</h3>
+      
 
       <div>
         <h2>Update Movie</h2>
@@ -26,8 +26,8 @@ const Show = (props) => {
         <input type="text" name="poster" placeholder="Where to watch" defaultValue={post.poster}/> <br />
         <input type="text" name="genre" placeholder="Genre" defaultValue={post.genre} /> <br />
         <input type="text" name="rating" placeholder="Release Date" defaultValue={post.rating}/> <br />
+        
   
-
         <button>Update Movie</button>
       </Form>
       <Form action={`/delete/${post.id}`} method="post">

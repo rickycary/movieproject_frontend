@@ -9,7 +9,8 @@ const Post = (props) => {
     textAlign: "center",
     border: "2px solid",
     margin: "10px auto",
-    width: "80%"
+    width: "40%",
+    backgroundColor: "#cfe0e8"
   }
 
     return <div style={div}>
