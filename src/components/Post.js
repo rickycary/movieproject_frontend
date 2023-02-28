@@ -7,7 +7,7 @@ const Post = (props) => {
   // Style
   const div = {
     textAlign: "center",
-    border: "3px solid",
+    border: "2px solid",
     margin: "10px auto",
     width: "80%"
   }

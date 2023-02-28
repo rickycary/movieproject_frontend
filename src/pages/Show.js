@@ -6,7 +6,7 @@ const Show = (props) => {
   // Styles
   const div = {
     textAlign: "center",
-    border: "3px solid green",
+    border: "3px solid red",
     width: "80%",
     margin: "30px auto",
   }
